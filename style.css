@@ -1,0 +1,56 @@
+body {
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#imgContainer {
+    background-color: aquamarine;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+}
+
+#image1 {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    z-index: 10;
+}
+
+#image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.scrolling_text {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+}
+
+.text {
+    font-size: 10vw;
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    color: #536fbc;
+    animation: animate_text 30s linear infinite;
+    /* The animation property */
+}
+
+.text span {
+    margin: 0 10PX;
+}
+
+@keyframes animate_text {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
