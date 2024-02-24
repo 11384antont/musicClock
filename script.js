@@ -1,3 +1,4 @@
+setTimeout('location.reload()', 3000);
 let songs = {
     0: "Moon, 12:04AM Offonoff",
     1: "1AM FREESTYLE Joji",
